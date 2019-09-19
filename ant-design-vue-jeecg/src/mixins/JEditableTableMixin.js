@@ -138,7 +138,7 @@ export const JEditableTableMixin = {
       }).catch(e => {
         if (e.error === VALIDATE_NO_PASSED) {
           // 如果有未通过表单验证的子表，就自动跳转到它所在的tab
-          this.activeKey = e.index == null ? this.activeKey : this.refKeys[e.index]
+          this.activeKey = e.Index == null ? this.activeKey : this.refKeys[e.Index]
         } else {
           console.error(e)
         }
